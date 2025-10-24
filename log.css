@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-box {
+    background-color: #004d4d;
+    padding: 75px 100px;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+}
+
+.textbox {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.checkbox {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #004d4d;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9fc5c5;
+}
+
+.footer-links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer-links a {
+    color: #78b2c4;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Estilos del contenedor que centra el círculo */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Asegura que esté por encima del contenido */
+  transition: opacity 0.5s ease;
+}
+
+/* Estilo del cargador */
+.loader {
+  border: 8px solid #f3f3f3;
+  opacity: 0,5;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+/* Animación para el giro */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader-container {
+  /* ... */
+  transition: opacity 1s ease;
+}
+
+
